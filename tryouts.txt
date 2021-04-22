@@ -1,0 +1,33 @@
+User.objects.create(first_name="Lionel", last_name="Messi", email_adress="lionel.messi@hotmail.com", age="34")
+
+User.objects.create(first_name="Enes", last_name="Matja", email_adress="enes.matja@hotmail.com", age="26")
+
+User.objects.create(first_name="Cristiano", last_name="Ronaldo", email_adress="cristiano.ronaldo@hotmail.com", age="35")
+
+User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+
+one_user= User.objects.get(id=3)
+>>> User.objects.get(id=3)
+<User: User object (3)>
+
+two_user= User.objects.get(id=1)
+>>> User.objects.get(id=1)
+<User: User object (1)>
+
+three_user= User.objects.get(id=2)
+>>> User.objects.get(id=2)
+<User: User object (2)>
+
+>>> User_to_update = User.objects.get(id=3)
+>>> User_to_update.first_name = "Pancakes"
+>>> User_to_update.save()
+
+User_to_delete = User.objects.get(id=2)
+
+>>> User_to_delete.delete()
+(1, {'orm_project_app.User': 1})
+
+User_model = User.objects.order_by ('first_name')
+
+QuerySet [<User: User object (1)>, <User: User object (3)>]>
