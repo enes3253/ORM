@@ -1,0 +1,60 @@
+new_created_Dojo = Dojo.objects.create(name="Enes" , city="Tirana" , state="Albania")
+
+new_created_Dojo = Dojo.objects.create(name="Genta" , city="Tirana" , state="Albania")
+
+new_created_Dojo = Dojo.objects.create(name="Esad" , city="Tirana" , state="Albania")
+
+new_created_Dojo.save()
+
+Dojo_to_delete = Dojo.objects.get(id=1)
+
+Dojo_to_delete = Dojo.objects.get(id=2)
+
+Dojo_to_delete = Dojo.objects.get(id=3)
+
+new_created_Dojo = Dojo.objects.create(name="Enes" , city="Tirana" , state="Albania")
+
+new_created_Dojo = Dojo.objects.create(name="Genta" , city="Tirana" , state="Albania")
+
+new_created_Dojo = Dojo.objects.create(name="Esad" , city="Tirana" , state="Albania")
+
+create_ninja=Ninja.objects.create(first_name="Ledio" , last_name="Foci", dojoid_id=1)
+
+create_ninja=Ninja.objects.create(first_name="Donalt", last_name="Kucuku",dojoid_id=1)
+
+create_ninja=Ninja.objects.create(first_name="Mexhi", last_name="Doda" , dojoid_id=1)
+
+create_ninja.save()
+
+create_ninja=Ninja.objects.create(first_name="Sali" , last_name="Berisha", dojoid_id=2)
+
+create_ninja=Ninja.objects.create(first_name="Reimond", last_name="Kucuku",dojoid_id=2)
+
+create_ninja=Ninja.objects.create(first_name="Edi", last_name="Rama" , dojoid_id=2)
+
+create_ninja.save()
+
+create_ninja=Ninja.objects.create(first_name="Cristiano" , last_name="Ronaldo", dojoid_id=3)
+
+create_ninja=Ninja.objects.create(first_name="Lionel", last_name="Messi",dojoid_id=3)
+
+create_ninja=Ninja.objects.create(first_name="Ronaldo", last_name="Nazario" , dojoid_id=3)
+
+create_ninja.save()
+
+get_ninja = Ninja.objects.first()
+
+get_ninja = Ninja.objects.last()
+
+last_ninja = Dojo.objects.filter(name="Esad")
+
+new_create_Dojo = Dojo.objects.create(name="Lomi" , city="Tirana" , state="Albania", desc="Good Guy")
+
+new_create_Dojo.save()
+
+
+
+
+new_created_Dojo.save()
+
+all_dojos = Dojo.objects.all()
